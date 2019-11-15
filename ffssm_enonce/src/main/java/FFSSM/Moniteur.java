@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Moniteur extends Personne {
+public class Moniteur extends Plongeur {
 
     public int numeroDiplome;
 
