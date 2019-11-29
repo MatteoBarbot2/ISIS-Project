@@ -11,6 +11,8 @@ import java.util.List;
 public class Moniteur extends Plongeur {
 
     public int numeroDiplome;
+    
+    public List<Embauche> employeurs = new LinkedList<>();
 
     public Moniteur(String numeroINSEE, String nom, String prenom, String adresse, String telephone, Calendar naissance, int numeroDiplome) {
         super(numeroINSEE, nom, prenom, adresse, telephone, naissance);

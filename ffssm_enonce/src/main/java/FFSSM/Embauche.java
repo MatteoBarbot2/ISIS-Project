@@ -23,7 +23,13 @@ public class Embauche {
      * @param dateFin la date à laquelle cette embauche est terminée
      */
     public void terminer(Calendar dateFin) {
-         this.fin = dateFin;	    
+        if (null == dateFin) {
+            throw new IllegalArgumentException("dateFin is null");
+	}
+	if (dateFin.before(debut)) {
+            throw new IllegalArgumentException("La date de fin est antérieure à la date de début");
+	}
+        this.fin = dateFin;	    
     }
     
     /**

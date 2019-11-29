@@ -51,6 +51,12 @@ public class Licence {
      * @return vrai si valide à la date d
      **/
     public boolean estValide(Calendar d) {
-        return delivrance.before(d);
+        
+        Calendar limite = (Calendar) delivrance.clone();
+        
+        limite.add(Calendar.YEAR, 1);
+        limite.add(Calendar.DAY_OF_YEAR, 1);
+        
+        return limite.after(d) && delivrance.before(d);
     }
 }
