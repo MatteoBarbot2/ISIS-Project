@@ -29,7 +29,7 @@ public class Embauche {
 	if (dateFin.before(debut)) {
             throw new IllegalArgumentException("La date de fin est antérieure à la date de début");
 	}
-        this.fin = dateFin;	    
+        this.fin = dateFin;
     }
     
     /**

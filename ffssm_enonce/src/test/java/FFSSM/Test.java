@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package FFSSM;
 
 /**
  *
  * @author mbarbot
  */
-public class FFSSM_Test {
-    
+public class Test {
     
 }
