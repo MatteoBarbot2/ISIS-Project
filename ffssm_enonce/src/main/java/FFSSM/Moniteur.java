@@ -19,19 +19,33 @@ public class Moniteur extends Plongeur {
         this.numeroDiplome = numeroDiplome;
     }
 
-    public Club employeur() {
-         // TODO: Implémenter cette méthode
-        throw new UnsupportedOperationException("Pas encore implémenté");
+    public Club employeurActuel() {
+        Club result;
+        if(employeurs.isEmpty()){
+            result = null;
+        }
+        if (employeurs.get(employeurs.size()-1).estTerminee()){
+            result = null;
+        }
+        else {
+            result = employeurs.get(employeurs.size()-1).getEmployeur();
+        }
+        return result;
     }
     
-    public void nouvelleEmbauche(Club employeur, Calendar debutNouvelle) {   
-         // TODO: Implémenter cette méthode
-        throw new UnsupportedOperationException("Pas encore implémenté");	    
+    public void nouvelleEmbauche(Club employeur, Calendar debutNouvelle) { 
+        if (!employeurs.isEmpty()){
+            if (! employeurs.get(employeurs.size()-1).estTerminee()){
+                employeurs.get(employeurs.size()-1).setFin(debutNouvelle);
+            }
+        }
+        Embauche nouvelleembauche = new Embauche(debutNouvelle,this,employeur);
+        employeurs.add(nouvelleembauche);
     }
 
     public List<Embauche> emplois() {
-         // TODO: Implémenter cette méthode
-        throw new UnsupportedOperationException("Pas encore implémenté");
+        
+        return employeurs;
     }
 
 }
