@@ -19,6 +19,9 @@ public class Plongeur extends Personne {
     }
     
     public Licence derniereLicence (){
+        if (this.licences.isEmpty()){
+            return null;
+        }
         return this.licences.get(licences.size()-1);
     }
     

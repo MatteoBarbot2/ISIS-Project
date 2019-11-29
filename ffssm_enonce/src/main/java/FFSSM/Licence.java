@@ -57,6 +57,6 @@ public class Licence {
         limite.add(Calendar.YEAR, 1);
         limite.add(Calendar.DAY_OF_YEAR, 1);
         
-        return limite.after(d) && delivrance.before(d);
+        return limite.after(d) && (delivrance.before(d) || delivrance == d);
     }
 }
