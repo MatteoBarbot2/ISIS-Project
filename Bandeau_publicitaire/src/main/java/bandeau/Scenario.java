@@ -26,4 +26,15 @@ public class Scenario {
             }
         }
     }
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public List<Liste_effet> getEffets() {
+        return effets;
+    }
 }
