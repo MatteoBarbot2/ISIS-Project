@@ -8,13 +8,38 @@ package bandeau;
 
 
 public class Liste_effet {
-    public Effet effets;
-    public int repetitions;
-    public Scenario scenarios;
+    private Effet effets;
+    private int repetitions;
+    private Scenario scenarios;
 
     public Liste_effet(Effet effets, int repetitions, Scenario scenarios) {
         this.effets = effets;
         this.repetitions = repetitions;
         this.scenarios = scenarios;
     }
+
+    public Effet getEffets() {
+        return effets;
+    }
+
+    public void setEffets(Effet effets) {
+        this.effets = effets;
+    }
+
+    public int getRepetitions() {
+        return repetitions;
+    }
+
+    public void setRepetitions(int repetitions) {
+        this.repetitions = repetitions;
+    }
+
+    public Scenario getScenarios() {
+        return scenarios;
+    }
+
+    public void setScenarios(Scenario scenarios) {
+        this.scenarios = scenarios;
+    }
+    
 }

@@ -8,7 +8,9 @@ package bandeau;
 import java.awt.Font;
 
 public class Zoom extends Effet{
-    public Zoom (Bandeau bandeau){
+    
+    @Override
+    public void jouerEffet (Bandeau bandeau){
         for (int i = 5; i < 60 ; i+=5) {
 		bandeau.setFont(new Font("Arial", Font.BOLD, 5+i));
 		bandeau.sleep(50);

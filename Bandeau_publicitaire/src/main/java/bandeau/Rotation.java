@@ -8,7 +8,9 @@ package bandeau;
 
 
 public class Rotation extends Effet{
-    public Rotation (Bandeau bandeau){
+    
+    @Override
+    public void jouerEffet (Bandeau bandeau){
         for (int i = 0; i <= 100; i++) {
 		bandeau.setRotation(2*Math.PI*i / 100);
 		bandeau.sleep(50);

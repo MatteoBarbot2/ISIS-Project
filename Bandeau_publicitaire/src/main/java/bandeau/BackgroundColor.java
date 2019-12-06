@@ -8,8 +8,16 @@ package bandeau;
 import java.awt.Color;
 
 public class BackgroundColor extends Effet{
-    public BackgroundColor (Bandeau bandeau, Color c){
-        bandeau.setBackground(c);
+    
+    public Color color;
+    
+    public BackgroundColor(Color color){
+        this.color = color;
+    }
+    
+    @Override
+    public void jouerEffet (Bandeau bandeau){
+        bandeau.setBackground(this.color);
         bandeau.sleep(1000);
     }
 }

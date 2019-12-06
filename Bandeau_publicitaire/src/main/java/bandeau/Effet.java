@@ -8,5 +8,5 @@ package bandeau;
 
 
 public abstract class Effet {
-   
+   public abstract void jouerEffet(Bandeau bandeau);
 }
