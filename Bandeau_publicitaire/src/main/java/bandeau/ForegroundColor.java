@@ -18,6 +18,6 @@ public class ForegroundColor extends Effet{
     @Override
     public void jouerEffet (Bandeau bandeau){
         bandeau.setForeground(this.color);
-        bandeau.sleep(1000);
+        bandeau.sleep(300);
     }
 }

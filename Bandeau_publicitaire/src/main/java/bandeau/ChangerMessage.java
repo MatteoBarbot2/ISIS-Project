@@ -5,19 +5,18 @@
  */
 package bandeau;
 
-import java.awt.Color;
 
-public class BackgroundColor extends Effet{
+
+public class ChangerMessage extends Effet{
     
-    public Color color;
+    public String monMessage;
     
-    public BackgroundColor(Color color){
-        this.color = color;
+    public ChangerMessage(String message){
+        this.monMessage = message;
     }
     
     @Override
     public void jouerEffet (Bandeau bandeau){
-        bandeau.setBackground(this.color);
-        bandeau.sleep(300);
+        bandeau.setMessage(this.monMessage);
     }
 }

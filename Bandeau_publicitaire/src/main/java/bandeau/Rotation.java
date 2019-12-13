@@ -13,8 +13,7 @@ public class Rotation extends Effet{
     public void jouerEffet (Bandeau bandeau){
         for (int i = 0; i <= 100; i++) {
 		bandeau.setRotation(2*Math.PI*i / 100);
-		bandeau.sleep(50);
+		bandeau.sleep(35);
 	}
-        bandeau.sleep(1000);
     }
 }

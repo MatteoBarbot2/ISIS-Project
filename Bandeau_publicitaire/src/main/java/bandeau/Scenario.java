@@ -19,7 +19,7 @@ public class Scenario {
         Liste_effet nouvelleListeEffets = new Liste_effet(effet,repetitions,this);
         effets.add(nouvelleListeEffets);
     }
-    public void enchainementScenario (Bandeau bandeau){
+    public void jouerScenario (Bandeau bandeau){
         for (Liste_effet l : effets){
             for (int i=0;i<l.getRepetitions();i++){
                 l.getEffets().jouerEffet(bandeau);

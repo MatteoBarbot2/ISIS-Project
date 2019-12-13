@@ -15,6 +15,5 @@ public class Zoom extends Effet{
 		bandeau.setFont(new Font("Arial", Font.BOLD, 5+i));
 		bandeau.sleep(50);
 	}
-	bandeau.sleep(1000);
     }
 }
