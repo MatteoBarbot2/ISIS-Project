@@ -11,7 +11,7 @@ import static java.awt.Color.*;
  *
  * @author mbarbot
  */
-public class monBandeau {
+public class Main {
 
     public static void main(String[] args) {
 
