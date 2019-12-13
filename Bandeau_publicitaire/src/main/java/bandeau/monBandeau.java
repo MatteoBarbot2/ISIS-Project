@@ -16,7 +16,7 @@ public class monBandeau {
     public static void main(String[] args) {
 
         Bandeau monBandeau = new Bandeau();
-        Scenario scenario = new Scenario("Test");
+        Scenario scenario = new Scenario("DISCO");
         Zoom zoom = new Zoom();
         Rotation rotation = new Rotation();
         ChangerMessage messageRota = new ChangerMessage("On s'echauffe...");
